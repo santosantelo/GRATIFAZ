@@ -1,7 +1,8 @@
 
+
 export type View = 'home' | 'contribute' | 'projects' | 'diary' | 'news';
 
-// FIX: Add AuthView type to fix import error in AuthScreen.
+// FIX: Add missing AuthView type to resolve import error in AuthScreen.
 export type AuthView = 'login' | 'signup' | 'forgot';
 
 export interface Project {

@@ -67,6 +67,25 @@ export const RepeatIcon: React.FC<IconProps> = ({ className }) => (
 );
 
 
+// FIX: Add missing icon components to resolve import errors in AuthScreen.
+export const MailIcon: React.FC<IconProps> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+);
+
+export const LockClosedIcon: React.FC<IconProps> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+    </svg>
+);
+
+export const UserIcon: React.FC<IconProps> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+    </svg>
+);
+
 // FIX: Add missing icon components to resolve import errors.
 export const InstagramIcon: React.FC<IconProps> = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -88,26 +107,8 @@ export const ClipboardCheckIcon: React.FC<IconProps> = ({ className }) => (
     </svg>
 );
 
-export const MailIcon: React.FC<IconProps> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-    </svg>
-);
-
-export const LockClosedIcon: React.FC<IconProps> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-    </svg>
-);
-
-export const UserIcon: React.FC<IconProps> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-    </svg>
-);
-
 export const WhatsAppIcon: React.FC<IconProps> = ({ className }) => (
     <svg fill="currentColor" className={className} viewBox="0 0 24 24">
-        <path d="M12.04,2C6.58,2,2.13,6.45,2.13,12c0,1.75,0.--- 
+        <path d="M12.04 2A10.02 10.02 0 0 0 2 12c0 1.8.48 3.47 1.34 4.95L2 22l5.25-1.38c1.4.78 3.02 1.23 4.75 1.23h.01c5.46 0 9.9-4.45 9.9-9.9C22 6.45 17.5 2 12.04 2zM12 20.15c-1.5 0-2.92-.41-4.14-1.15l-.3-.18-3.07.8.82-3.02-.2-.32a8.16 8.16 0 0 1-1.25-4.38c0-4.42 3.6-8 8-8s8 3.58 8 8-3.6 8-8 8zm4.4-5.32c-.22-.11-.9-1.29-1.04-1.44s-.24-.22-.34-.11c-.1.11-.4.49-.49.59-.09.1-.18.11-.33.05s-1.35-.5-2.57-1.58c-.96-.84-1.61-1.88-1.8-2.2s-.19-.52-.08-.68c.1-.15.22-.38.33-.51s.15-.22.22-.38c.08-.15.04-.28-.01-.38s-.34-.81-.46-.92c-.12-.11-.25-.1-.38-.1s-.22-.01-.33-.01-.28.04-.42.22-.54.52-.54 1.26.55 2.92 1.24 3.61c.69.69 2.12 2.66 4.18 3.72.6.33 1.15.54 1.54.68.75.28 1.42.24 1.95.15.59-.1.9-1.07 1.04-1.22.14-.15.14-.28.1-.38s-.09-.11-.2-.22z" />
     </svg>
 );
